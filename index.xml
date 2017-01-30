@@ -21,8 +21,8 @@
 &lt;p&gt;Some stuff I&amp;rsquo;ve done:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;link to thesis&#34;&gt;High-Performance Persistent Graphs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://jcm93.github.io/jmc/&#34;&gt;jmc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://digitalccbeta.coloradocollege.edu/pid/coccc:25837&#34;&gt;High-Performance Persistent Graphs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://example.org/jmc/&#34;&gt;jmc&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://tomcheavens.photos&#34;&gt;Tom Cheavens Photography&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -38,9 +38,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/money/</guid>
-      <description>&lt;p&gt;I wrote jmc in my spare time. I&amp;rsquo;ll need a job soon. If you give me money, it would strongly encourage me to spend more time working on software and independent projects. You can do so &lt;a href=&#34;https://www.paypal.me/jcm93/15&#34;&gt;here&lt;/a&gt; with PayPal, or &lt;a href=&#34;https://venmo.com/johnmoody&#34;&gt;here&lt;/a&gt; with Venmo.&lt;/p&gt;
+      <description>&lt;p&gt;I wrote jmc in my spare time. I&amp;rsquo;ll need a job soon. If you give me money, it would strongly encourage me to spend more time working on jmc and other projects. You can do so &lt;a href=&#34;https://www.paypal.me/jcm93/15&#34;&gt;here&lt;/a&gt; with PayPal, or &lt;a href=&#34;https://venmo.com/johnmoody&#34;&gt;here&lt;/a&gt; with Venmo.&lt;/p&gt;
 
 &lt;p&gt;Thanks!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://example.org/jmc/&#34;&gt;Back to jmc&lt;/a&gt; | &lt;a href=&#34;http://example.org/&#34;&gt;Home&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -68,16 +70,18 @@
 
 &lt;p&gt;jmc is written completely in Swift, is completely open-source, and runs on OS X (macOS) 10.10 and above.&lt;/p&gt;
 
-&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#features&#34;&gt;Features&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#installation&#34;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#roadmap&#34;&gt;Roadmap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#more&#34;&gt;More&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;features&#34;&gt;Features&lt;/h1&gt;
 
-&lt;p&gt;jmc looks a lot like iTunes, while fixing many frustrating and unintuitive aspects of the iTunes interface. In particular:&lt;/p&gt;
+&lt;p&gt;jmc looks a lot like iTunes, but fixes many frustrating and unintuitive aspects of the iTunes interface. In particular:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;jmc doesn&amp;rsquo;t change your focus in the songs view when you skip a song.&lt;/li&gt;
@@ -103,11 +107,9 @@
 
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/SJ5RgM5.png&#34; alt=&#34;screenshot&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;For a more complete list of current and upcoming features, take a look at the &lt;a href=&#34;https://jcm93.github.io/jmc/roadmap&#34;&gt;roadmap&lt;/a&gt;.&lt;/p&gt;
-
 &lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
 
-&lt;p&gt;You can either compile jmc from source manually or download the latest stable artifact &lt;a href=&#34;https://github.com/jcm93/jmc/&#34;&gt;here&lt;/a&gt;. In the future, binaries for jmc will likely be distributed through the App Store. In the meantime, please consider &lt;a href=&#34;https://jcm93.github.io/money/&#34;&gt;buying me some coffee or food&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;You can either compile jmc from source manually or download the latest stable artifact &lt;a href=&#34;https://github.com/jcm93/jmc/&#34;&gt;here&lt;/a&gt;. In the future, binaries for jmc will likely be distributed through the App Store. In the meantime, please consider &lt;a href=&#34;http://example.org/money/&#34;&gt;buying me some coffee or food&lt;/a&gt;!&lt;/p&gt;
 
 &lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
 
@@ -117,11 +119,55 @@
 
 &lt;p&gt;When adding media, jmc can rename your files to follow the “${disc number}-${track number} ${track name}.${extension}” convention. Currently, jmc will never modify the content of files.&lt;/p&gt;
 
+&lt;h1 id=&#34;roadmap&#34;&gt;Roadmap&lt;/h1&gt;
+
+&lt;p&gt;A few high priorities for jmc features are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Support for multiple pieces of album artwork per album, including PDFs.&lt;/li&gt;
+&lt;li&gt;More thorough, and preferably automatically tagged metadata.&lt;/li&gt;
+&lt;li&gt;Custom fields for media (think &amp;ldquo;featuring&amp;rdquo;, or &amp;ldquo;mood&amp;rdquo;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While some of these features were half-written and planned for the current release, I realized that the best way to support them would likely be to introduce compatibility with the &lt;a href=&#34;http://beets.io/&#34;&gt;beets&lt;/a&gt; project, which is already a wonderful media management system for macOS users that supports auto-tagging, artwork management and much more. Since supporting beets will involve migrating from jmc&amp;rsquo;s current persistence framework (Core Data) toward SQLite, I elected not to complete half-baked versions of the above, only to rewrite large swaths of them later on.&lt;/p&gt;
+
+&lt;p&gt;Note: this upcoming migration has the side effect that subsequent versions of jmc will probably require you to re-import your library.&lt;/p&gt;
+
+&lt;p&gt;Some simple features that need implementation on jmc right now include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Non-placeholder icons.&lt;/li&gt;
+&lt;li&gt;A location manager that offers a powerful interface for viewing and manipulating where jmc thinks media files are. Also, media directory monitoring using FSEvents to watch directories for changes that warrant metadata modification to application entities.&lt;/li&gt;
+&lt;li&gt;Advanced playback features like crossfades, custom start-stop playback positions and volume settings for tracks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A few slightly larger things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fancier views for media akin to the iTunes album and artist views (but which aren&amp;rsquo;t broken).&lt;/li&gt;
+&lt;li&gt;FLAC support. Currently jmc uses &lt;a href=&#34;https://developer.apple.com/reference/avfoundation/avaudioengine&#34;&gt;AVAudioEngine&lt;/a&gt; for audio playback. I am currently investigating solutions here.&lt;/li&gt;
+&lt;li&gt;A discrete, server-only version of jmc that runs in the background and serves media from a volume to jmc clients on a local area network, and beyond (think Plex). This is basically jmc minus the GUI.&lt;/li&gt;
+&lt;li&gt;A better way of displaying and adding these “probably-always-available” remote libraries other than the Shared Libraries tab of the source list.&lt;/li&gt;
+&lt;li&gt;Making shared libraries better and less crash-prone.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Still more stuff:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Make jmc Applescript-able&lt;/li&gt;
+&lt;li&gt;Last.fm integration? Last.fm seems to be on its way out, but there are few alternatives.&lt;/li&gt;
+&lt;li&gt;A MiniPlayer!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Also, jmc currently doesn&amp;rsquo;t play podcasts or videos. This functionality will likely arrive in some capacity in the future.&lt;/p&gt;
+
 &lt;h1 id=&#34;more&#34;&gt;More&lt;/h1&gt;
 
-&lt;p&gt;To read more about features both current and planned, take a look at the &lt;a href=&#34;https://jcm93.github.io/jmc/roadmap/&#34;&gt;roadmap&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;jmc&amp;rsquo;s code is available &lt;a href=&#34;https://jcm93.github.com/jmc/&#34;&gt;on GitHub&lt;/a&gt;. All contributions are welcome!&lt;/p&gt;
 
-&lt;p&gt;I don&amp;rsquo;t have a job right now! You can &lt;a href=&#34;https://jcm93.github.io/money/&#34;&gt;feed me&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t have a job right now! You can &lt;a href=&#34;http://example.org/money/&#34;&gt;feed me&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://example.org/&#34;&gt;Home&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -170,6 +216,8 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Also, jmc currently doesn&amp;rsquo;t play podcasts or videos. This functionality will likely arrive in some capacity in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://example.org/jmc/&#34;&gt;Back to jmc&lt;/a&gt; | &lt;a href=&#34;http://example.org/&#34;&gt;Home&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
