@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<style>
+body {width:78%;margin:auto;line-height:1.45;font-family:helvetica;font-size:13pt}
+img {width:100%;margin:auto;}
+</style>
+<html>
+<head>
+  <title>jmc Roadmap</title>
+</head>
+<body>
+  <h1>jmc Roadmap</h1>
+  
+  <p>A few high priorities for jmc features are:</p>
+
+<ul>
+<li>Support for multiple pieces of album artwork per album, including PDFs.</li>
+<li>More thorough, and preferably automatically tagged metadata.</li>
+<li>Custom fields for media (think &ldquo;featuring&rdquo;, or &ldquo;mood&rdquo;).</li>
+</ul>
+
+<p>While some of these features were half-written and planned for the current release, I realized that the best way to support them would likely be to introduce compatibility with the <a href="http://beets.io/">beets</a> project, which is already a wonderful media management system for macOS users that supports auto-tagging, artwork management and much more. Since supporting beets will involve migrating from jmc&rsquo;s current persistence framework (Core Data) toward SQLite, I elected not to complete half-baked versions of the above, only to rewrite large swaths of them later on.</p>
+
+<p>Note: this upcoming migration has the side effect that subsequent versions of jmc will probably require you to re-import your library.</p>
+
+<p>Some simple features that need implementation on jmc right now include:</p>
+
+<ul>
+<li>Non-placeholder icons.</li>
+<li>A location manager that offers a pleasant interface for viewing and manipulating where jmc thinks media files are. Also, media directory monitoring using FSEvents to watch directories for changes that warrant metadata modification to application entities.</li>
+<li>Advanced playback features like crossfades, custom start-stop playback positions and volume settings for tracks.</li>
+</ul>
+
+<p>A few slightly larger things:</p>
+
+<ul>
+<li>Fancier views for media akin to the iTunes album and artist views (but which aren&rsquo;t broken).</li>
+<li>FLAC support. Currently jmc uses <a href="https://developer.apple.com/reference/avfoundation/avaudioengine">AVAudioEngine</a> for audio playback. I am currently investigating solutions here.</li>
+<li>A discrete, server-only version of jmc that runs in the background and serves media from a volume to jmc clients on a local area network, and beyond (think Plex). This is basically jmc minus the GUI.</li>
+<li>A better way of displaying and adding these “probably-always-available” remote libraries other than the Shared Libraries tab of the source list.</li>
+<li>Making shared libraries better and less crash-prone.</li>
+</ul>
+
+<p>Still more stuff:</p>
+
+<ul>
+<li>Make jmc Applescript-able</li>
+<li>Last.fm integration? Last.fm seems to be on its way out, but there are few alternatives.</li>
+<li>A MiniPlayer!</li>
+</ul>
+
+<p>Also, jmc currently doesn&rsquo;t play podcasts or videos. This functionality will likely arrive in some capacity in the future.</p>
+
+</body>
+</html>
