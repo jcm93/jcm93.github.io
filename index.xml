@@ -94,7 +94,7 @@
 
 &lt;p&gt;The current build of jmc is a pared-down, minimal music organizer and player. For jmc to compete with features in state-of-the-art media managers on other platforms like auto-tagging and custom fields, more work is yet to be done.&lt;/p&gt;
 
-&lt;p&gt;Future versions of jmc will likely integrate with &lt;a href=&#34;http://beets.io/&#34;&gt;beets&lt;/a&gt;, to provide auto-tagging and album artwork fetching, support for multiple pieces of album artwork, custom fields for tracks, and more. The first step of beets support involves migrating away from the current persistence framework used by jmc (Core Data) toward SQLite.&lt;/p&gt;
+&lt;p&gt;Future versions of jmc will likely integrate with &lt;a href=&#34;http://beets.io/&#34;&gt;beets&lt;/a&gt;, to provide auto-tagging and album artwork fetching, support for multiple pieces of album artwork, custom fields for tracks, and more. To integrate with beets, jmc will migrate away from its current persistence framework (Core Data) in favor of SQLite.&lt;/p&gt;
 
 &lt;p&gt;jmc also wants to support a persistent background server mode of operation, to allow users to remotely connect to their libraries from beyond the local area network.&lt;/p&gt;
 
@@ -105,7 +105,7 @@
 &lt;li&gt;Swift 3 migration.&lt;/li&gt;
 &lt;li&gt;Advanced playback features like crossfades, custom start/stop playback positions, custom volume settings for tracks&lt;/li&gt;
 &lt;li&gt;Making shared libraries better and less crash-prone.&lt;/li&gt;
-&lt;li&gt;Location manager that offers a functional interface for managing where jmc thinks media files are.
+&lt;li&gt;Location manager that offers a functional interface for managing where jmc thinks media files are. High priority.
 This is a large component of what will make jmc nice to use for external libraries.&lt;/li&gt;
 &lt;li&gt;FLAC support. Currently jmc uses &lt;a href=&#34;https://developer.apple.com/reference/avfoundation/avaudioengine&#34;&gt;AVAudioEngine&lt;/a&gt; for audio playback. I am currently investigating solutions here.&lt;/li&gt;
 &lt;li&gt;Fancier views for media akin to the iTunes album and artist views (but which aren&amp;rsquo;t broken).&lt;/li&gt;
@@ -129,7 +129,7 @@ This is a large component of what will make jmc nice to use for external librari
 
 &lt;p&gt;Future versions of jmc will likely be distributed through the App Store, to simplify the process of versioning and distribution.&lt;/p&gt;
 
-&lt;p&gt;If you are interested in helping to create a better future for macOS media management, drop me a line and come get involved!&lt;/p&gt;
+&lt;p&gt;If you are interested in helping to create a better future for macOS media management, &lt;a href=&#34;http://example.org/&#34;&gt;drop me a line&lt;/a&gt; and come get involved!&lt;/p&gt;
 </description>
     </item>
     
