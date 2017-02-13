@@ -54,120 +54,82 @@
       <guid>http://example.org/jmc/</guid>
       <description>
 
+&lt;p&gt;jmc is a new media player project with the simple goal of being the best tool for organizing and listening to music on macOS, period.&lt;/p&gt;
+
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/8NhiZpE.png&#34; alt=&#34;screenshot&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;jmc is a fast, no-nonsense media manager for macOS. It has an elegant, streamlined interface that harkens back to early versions of iTunes. jmc aims to give you the power and functionality associated with hackable media managers like foobar2000 with the elegance and simplicity of a well-designed platform-native macOS application.&lt;/p&gt;
+&lt;p&gt;jmc wants to bring power, flexibility and elegance back to macOS media management, and rescue macOS from iTunes.&lt;/p&gt;
 
-&lt;p&gt;jmc:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Uses less memory and CPU than iTunes while performing better with libraries both small and large (50,000+ tracks).&lt;/li&gt;
-&lt;li&gt;Lets you look at your album art again.&lt;/li&gt;
-&lt;li&gt;Plays your albums in the correct order, Every Time.™&lt;/li&gt;
-&lt;li&gt;Lets you share your music over a local area network.&lt;/li&gt;
-&lt;li&gt;Has an elegant, simple and powerful interface.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;jmc is written completely in Swift, is completely open-source, and runs on OS X (macOS) 10.10 and above.&lt;/p&gt;
+&lt;p&gt;jmc is also a completely open-source project.&lt;/p&gt;
 
 &lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
 
-&lt;ul&gt;
+&lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;#features&#34;&gt;Features&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#installation&#34;&gt;Installation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#roadmap&#34;&gt;Roadmap&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#more&#34;&gt;More&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;a href=&#34;#download&#34;&gt;Download&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h1 id=&#34;features&#34;&gt;Features&lt;/h1&gt;
 
-&lt;p&gt;jmc looks a lot like iTunes, but fixes many frustrating and unintuitive aspects of the iTunes interface. In particular:&lt;/p&gt;
+&lt;p&gt;jmc aims to be a simple, elegant and powerful application for managing media on macOS. It is modeled after early versions of iTunes, reintroducing a persistent album art view and providing a functional user interface. The entire interface is geared toward intuitiveness, efficiency, and performance, particularly for large music libraries.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;jmc doesn&amp;rsquo;t change your focus in the songs view when you skip a song.&lt;/li&gt;
-&lt;li&gt;If you&amp;rsquo;re listening to a playlist and queue up a track, you won&amp;rsquo;t hear it twice.&lt;/li&gt;
-&lt;li&gt;Ordering a track to play while there are manually queued tracks doesn&amp;rsquo;t result in &lt;a href=&#34;https://i.imgur.com/oQb22Fk.png&#34;&gt;this dumb dialog box&lt;/a&gt;. jmc just plays the track.&lt;/li&gt;
-&lt;li&gt;Deterministic behavior upon adding tracks to the library. jmc doesn&amp;rsquo;t automatically play songs that you add to the library unless you tell it to.&lt;/li&gt;
-&lt;li&gt;jmc remembers your selection, scroll point, and sort behavior in all playlist views, so you can more easily manage your playlists.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In short, jmc&amp;rsquo;s interface should simply work the way you want it to.&lt;/p&gt;
-
-&lt;h3 id=&#34;advanced-search&#34;&gt;Advanced Search&lt;/h3&gt;
-
-&lt;p&gt;jmc does away with the Column Browser in iTunes, in favor of a more powerful and flexible advanced search:&lt;/p&gt;
+&lt;h2 id=&#34;advanced-search&#34;&gt;Advanced Search&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/oYB83zF.png&#34; alt=&#34;screenshot&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Using advanced search, users can filter their library by arbitrary criteria and create smart playlists.&lt;/p&gt;
+&lt;p&gt;The powerful advanced search filter offers the ability to explore your library and create smart playlists, all without leaving the library view.&lt;/p&gt;
 
-&lt;h3 id=&#34;shared-libraries&#34;&gt;Shared Libraries&lt;/h3&gt;
+&lt;h2 id=&#34;shared-libraries&#34;&gt;Shared Libraries&lt;/h2&gt;
 
-&lt;p&gt;jmc can connect to jmc clients nearby, displaying them in the source list. Clients can connect to each other using either Ethernet, infrastructure Wi-Fi, or peer-to-peer Wi-Fi for clients in close physical proximity on different networks. Clients can stream music from each other, or drag and drop.&lt;/p&gt;
+&lt;p&gt;jmc implements shared libraries the way you&amp;rsquo;ve always wanted them.&lt;/p&gt;
+
+&lt;p&gt;jmc can connect to other nearby instances of itself, displaying their libraries in the source list. Macs running jmc can connect to each other using either infrastructure or peer-to-peer Wi-Fi (clients in close physical proximity on different networks). You can either stream music from a shared library, or drag and drop.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/SJ5RgM5.png&#34; alt=&#34;screenshot&#34; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
-
-&lt;p&gt;You can either compile jmc from source manually or download the latest stable artifact &lt;a href=&#34;https://github.com/jcm93/jmc/&#34;&gt;here&lt;/a&gt;. In the future, binaries for jmc will likely be distributed through the App Store. In the meantime, please consider &lt;a href=&#34;http://example.org/money/&#34;&gt;buying me some coffee or food&lt;/a&gt;!&lt;/p&gt;
-
-&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
-
-&lt;p&gt;You can choose to allow jmc to organize your library by moving or copying added files, or have it perform no organization at all.&lt;/p&gt;
-
-&lt;p&gt;To import an existing iTunes library, use the “Import iTunes Library” action in the File menu, and point the importer at your iTunes Library.xml file.&lt;/p&gt;
-
-&lt;p&gt;When adding media, jmc can rename your files to follow the “${disc number}-${track number} ${track name}.${extension}” convention. Currently, jmc will never modify the content of files.&lt;/p&gt;
+&lt;p&gt;Soon, jmc will be able to run in a persistent server-only mode, allowing you to access your music from anywhere.&lt;/p&gt;
 
 &lt;h1 id=&#34;roadmap&#34;&gt;Roadmap&lt;/h1&gt;
 
-&lt;p&gt;A few high priorities for jmc features are:&lt;/p&gt;
+&lt;p&gt;The current build of jmc is a pared-down, minimal music organizer and player. For jmc to compete with features in state-of-the-art media managers on other platforms like auto-tagging and custom fields, more work is yet to be done.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Support for multiple pieces of album artwork per album, including PDFs.&lt;/li&gt;
-&lt;li&gt;More thorough, and preferably automatically tagged metadata.&lt;/li&gt;
-&lt;li&gt;Custom fields for media (think &amp;ldquo;featuring&amp;rdquo;, or &amp;ldquo;mood&amp;rdquo;).&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Future versions of jmc will likely integrate with &lt;a href=&#34;http://beets.io/&#34;&gt;beets&lt;/a&gt;, to provide auto-tagging and album artwork fetching, support for multiple pieces of album artwork, custom fields for tracks, and more. The first step of beets support involves migrating away from the current persistence framework used by jmc (Core Data) toward SQLite.&lt;/p&gt;
 
-&lt;p&gt;While some of these features were half-written and planned for the current release, I realized that the best way to support them would likely be to introduce compatibility with the &lt;a href=&#34;http://beets.io/&#34;&gt;beets&lt;/a&gt; project, which is already a wonderful media management system for macOS users that supports auto-tagging, artwork management and much more. Since supporting beets will involve migrating from jmc&amp;rsquo;s current persistence framework (Core Data) toward SQLite, I elected not to complete half-baked versions of the above, only to rewrite large swaths of them later on.&lt;/p&gt;
+&lt;p&gt;jmc also wants to support a persistent background server mode of operation, to allow users to remotely connect to their libraries from beyond the local area network.&lt;/p&gt;
 
-&lt;p&gt;Note: this upcoming migration has the side effect that subsequent versions of jmc will probably require you to re-import your library.&lt;/p&gt;
-
-&lt;p&gt;Some simple features that need implementation on jmc right now include:&lt;/p&gt;
+&lt;p&gt;Other features that need implementation on jmc right now also include, in descending order of triviality:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Non-placeholder icons.&lt;/li&gt;
-&lt;li&gt;A location manager that offers a powerful interface for viewing and manipulating where jmc thinks media files are. Also, media directory monitoring using FSEvents to watch directories for changes that warrant metadata modification to application entities.&lt;/li&gt;
-&lt;li&gt;Advanced playback features like crossfades, custom start-stop playback positions and volume settings for tracks.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;A few slightly larger things:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Fancier views for media akin to the iTunes album and artist views (but which aren&amp;rsquo;t broken).&lt;/li&gt;
-&lt;li&gt;FLAC support. Currently jmc uses &lt;a href=&#34;https://developer.apple.com/reference/avfoundation/avaudioengine&#34;&gt;AVAudioEngine&lt;/a&gt; for audio playback. I am currently investigating solutions here.&lt;/li&gt;
-&lt;li&gt;A discrete, server-only version of jmc that runs in the background and serves media from a volume to jmc clients on a local area network, and beyond (think Plex). This is basically jmc minus the GUI.&lt;/li&gt;
-&lt;li&gt;A better way of displaying and adding these “probably-always-available” remote libraries other than the Shared Libraries tab of the source list.&lt;/li&gt;
+&lt;li&gt;Swift 3 migration.&lt;/li&gt;
+&lt;li&gt;Advanced playback features like crossfades, custom start/stop playback positions, custom volume settings for tracks&lt;/li&gt;
 &lt;li&gt;Making shared libraries better and less crash-prone.&lt;/li&gt;
+&lt;li&gt;Location manager that offers a functional interface for managing where jmc thinks media files are.
+This is a large component of what will make jmc nice to use for external libraries.&lt;/li&gt;
+&lt;li&gt;FLAC support. Currently jmc uses &lt;a href=&#34;https://developer.apple.com/reference/avfoundation/avaudioengine&#34;&gt;AVAudioEngine&lt;/a&gt; for audio playback. I am currently investigating solutions here.&lt;/li&gt;
+&lt;li&gt;Fancier views for media akin to the iTunes album and artist views (but which aren&amp;rsquo;t broken).&lt;/li&gt;
+&lt;li&gt;A discrete, GUI-less build of jmc that will run as a persistently available media server for jmc clients on the local area network, and beyond.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Still more stuff:&lt;/p&gt;
+&lt;p&gt;Miscellany:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Make jmc Applescript-able&lt;/li&gt;
-&lt;li&gt;Last.fm integration? Last.fm seems to be on its way out, but there are few alternatives.&lt;/li&gt;
-&lt;li&gt;A MiniPlayer!&lt;/li&gt;
+&lt;li&gt;Podcast/video support.&lt;/li&gt;
+&lt;li&gt;AppleScript support.&lt;/li&gt;
+&lt;li&gt;Last.fm integration?&lt;/li&gt;
+&lt;li&gt;a MiniPlayer!&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Also, jmc currently doesn&amp;rsquo;t play podcasts or videos. This functionality will likely arrive in some capacity in the future.&lt;/p&gt;
+&lt;h1 id=&#34;download&#34;&gt;Download&lt;/h1&gt;
 
-&lt;h1 id=&#34;more&#34;&gt;More&lt;/h1&gt;
+&lt;p&gt;First, please consider &lt;a href=&#34;http://example.org/money/&#34;&gt;supporting development by feeding me with your money&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;jmc&amp;rsquo;s code is available &lt;a href=&#34;https://jcm93.github.com/jmc/&#34;&gt;on GitHub&lt;/a&gt;. All contributions are welcome!&lt;/p&gt;
+&lt;p&gt;The code for jmc is available &lt;a href=&#34;https://github.com/jcm93/jmc/&#34;&gt;on GitHub&lt;/a&gt;. The latest stable binary can be found in the releases tab.&lt;/p&gt;
 
-&lt;p&gt;I don&amp;rsquo;t have a job right now! You can &lt;a href=&#34;http://example.org/money/&#34;&gt;feed me&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Future versions of jmc will likely be distributed through the App Store, to simplify the process of versioning and distribution.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://example.org/&#34;&gt;Home&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you are interested in helping to create a better future for macOS media management, drop me a line and come get involved!&lt;/p&gt;
 </description>
     </item>
     
