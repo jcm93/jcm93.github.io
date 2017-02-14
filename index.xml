@@ -54,6 +54,8 @@
       <guid>http://example.org/jmc/</guid>
       <description>
 
+&lt;p&gt;&lt;a href=&#34;https://github.com/jcm93/jmc/&#34;&gt;(on Github)&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;jmc is a new media player project with the simple goal of being the best tool for organizing and listening to music on macOS, period.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/8NhiZpE.png&#34; alt=&#34;screenshot&#34; /&gt;&lt;/p&gt;
