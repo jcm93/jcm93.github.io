@@ -11,12 +11,12 @@
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
-    <priority>0</priority>
+    <loc>http://example.org/money/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/money/</loc>
+    <loc>http://example.org/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
