@@ -25,11 +25,18 @@ ga('send', 'pageview');
 
 <p>jmc is a new media player project with the simple goal of being the best tool for organizing and listening to music on macOS, period.</p>
 
-<p><img src="https://i.imgur.com/8NhiZpE.png" alt="screenshot" /></p>
+<p><img src="https://puu.sh/xoZYo/bd6d6deeb0.png" alt="screenshot" /></p>
 
-<p>jmc wants to bring power, flexibility and elegance back to macOS media management, and rescue macOS from iTunes.</p>
+<p>jmc wants to bring power, flexibility and elegance back to macOS media management. jmc:</p>
 
-<p>jmc is also a completely open-source project.</p>
+<ul>
+<li>Uses less memory and CPU than iTunes while performing better with libraries both small and large (50,000+ tracks).</li>
+<li>Offers powerful features for viewing album artwork, including text files and PDFs.</li>
+<li>Has a powerful suite of organization tools that let jmc organize your media however you want to, effortlessly.</li>
+<li>Centers around a simple, intuitive, and elegant interface for listening to your music that doesn&rsquo;t get in your way.</li>
+<li>Has a powerful interface for sharing media over a local area network.</li>
+<li>Supports FLAC.</li>
+</ul>
 
 <h3 id="table-of-contents">Table of Contents</h3>
 
@@ -41,62 +48,42 @@ ga('send', 'pageview');
 
 <h1 id="features">Features</h1>
 
-<p>jmc aims to be a simple, elegant and powerful application for managing media on macOS. It is modeled after early versions of iTunes, reintroducing a persistent album art view and providing a functional user interface. The entire interface is geared toward intuitiveness, efficiency, and performance, particularly for large music libraries.</p>
+<h3 id="library-manager">Library Manager</h3>
 
-<h2 id="advanced-search">Advanced Search</h2>
+<p><img src="https://puu.sh/xoZHp/31dddfc751.png" alt="screenshot" />
+jmc offers the most powerful tools for library organization of any media player for macOS. jmc keeps track of album artwork, PDFs, logs, cue sheets and more, and offers powerful tools for organizing your media.</p>
+
+<p>jmc elegantly accounts for media spread across external volumes, showing available and unavailable volumes in the sidebar and filtering the music in your library accordingly.</p>
+
+<h4 id="location-manager">Location Manager</h4>
+
+<p>jmc will track the locations of files added to it. If your files do missing, when transferring media between volumes or libraries, for example, you can use the location manager to easily relocate lost files and folders.</p>
+
+<h3 id="advanced-search">Advanced Search</h3>
 
 <p><img src="https://i.imgur.com/oYB83zF.png" alt="screenshot" /></p>
 
-<p>The powerful advanced search filter offers the ability to explore your library and create smart playlists, all without leaving the library view.</p>
+<p>Using advanced search, you can filter your library by arbitrary criteria and create smart playlists.</p>
 
-<h2 id="shared-libraries">Shared Libraries</h2>
+<h3 id="shared-libraries">Shared Libraries</h3>
 
-<p>jmc implements shared libraries the way you&rsquo;ve always wanted them.</p>
-
-<p>jmc can connect to other nearby instances of itself, displaying their libraries in the source list. Macs running jmc can connect to each other using either infrastructure or peer-to-peer Wi-Fi (clients in close physical proximity on different networks). You can either stream music from a shared library, or drag and drop.</p>
+<p>jmc can connect to jmc clients nearby, displaying them in the source list. Clients can connect to each other using either Ethernet, network Wi-Fi, or peer-to-peer Wi-Fi for clients in close physical proximity on different networks. Users can stream music from each other, or drag and drop to transfer media.</p>
 
 <p><img src="https://i.imgur.com/SJ5RgM5.png" alt="screenshot" /></p>
 
-<p>Soon, jmc will be able to run in a persistent server-only mode, allowing you to access your music from anywhere.</p>
+<h3 id="interface">Interface</h3>
 
-<h1 id="roadmap">Roadmap</h1>
+<p>jmc&rsquo;s advanced functionality is designed to stay out of the way of its elegant interface. jmc is intuitive. Maintaining a queue of upcoming music and creating playlists are as easy as dragging and dropping.</p>
 
-<p>The current build of jmc is a pared-down, minimal music organizer and player. For jmc to compete with features in state-of-the-art media managers on other platforms like auto-tagging and custom fields, more work is yet to be done.</p>
+<h1 id="installation">Installation</h1>
 
-<p>Future versions of jmc will likely integrate with <a href="http://beets.io/">beets</a>, to provide auto-tagging and album artwork fetching, support for multiple pieces of album artwork, custom fields for tracks, and more. To integrate with beets, jmc will migrate away from its current persistence framework (Core Data) in favor of SQLite.</p>
+<p>You can either compile jmc from source manually or download the latest stable artifact <a href="https://github.com/jcm93/jmc/">here</a>. In the future, binaries for jmc will likely be distributed through the App Store. In the meantime, please consider <a href="https://jcm93.github.io/money/">buying me some coffee or food</a>!</p>
 
-<p>jmc also wants to support a persistent background server mode of operation, to allow users to remotely connect to their libraries from beyond the local area network.</p>
+<h3 id="setup">Setup</h3>
 
-<p>Other features that need implementation on jmc right now also include, in descending order of triviality:</p>
+<p>You can choose to allow jmc to organize your library by moving or copying added files, or have it perform no organization at all.</p>
 
-<ul>
-<li>Non-placeholder icons.</li>
-<li>Advanced playback features like crossfades, custom start/stop playback positions, custom volume settings for tracks</li>
-<li>Making shared libraries better and less crash-prone.</li>
-<li>Location manager that offers a functional interface for managing where jmc thinks media files are. This is a large component of what will make jmc nice to use for external libraries. High priority.</li>
-<li>FLAC support. Currently jmc uses <a href="https://developer.apple.com/reference/avfoundation/avaudioengine">AVAudioEngine</a> for audio playback. I am currently investigating solutions here.</li>
-<li>Fancier views for media akin to the iTunes album and artist views (but which aren&rsquo;t broken).</li>
-<li>A discrete, GUI-less build of jmc that will run as a persistently available media server for jmc clients on the local area network, and beyond.</li>
-</ul>
-
-<p>Miscellany:</p>
-
-<ul>
-<li>Podcast/video support.</li>
-<li>AppleScript support.</li>
-<li>Last.fm integration?</li>
-<li>a MiniPlayer!</li>
-</ul>
-
-<h1 id="download">Download</h1>
-
-<p>First, please consider <a href="/money/">supporting development by feeding me with your money</a>.</p>
-
-<p>The code for jmc is available <a href="https://github.com/jcm93/jmc/">on GitHub</a>. The latest stable binary can be found in the releases tab.</p>
-
-<p>Future versions of jmc will likely be distributed through the App Store, to simplify the process of versioning and distribution.</p>
-
-<p>If you are interested in helping to create a better future for macOS media management, <a href="/">drop me a line</a> and come get involved!</p>
+<p>To import an existing iTunes library, use the “Import iTunes Library” action in the File menu, and point the importer at your iTunes Library.xml file.</p>
 
 </body>
 </html>
