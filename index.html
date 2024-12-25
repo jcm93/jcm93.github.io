@@ -1,41 +1,76 @@
 
 <!DOCTYPE html>
 <style>
-body {width:90%;margin:auto;line-height:1.45;font-family:helvetica;font-size:12pt;max-width:1100px}
-img {width:100%;margin:auto;}
+  body {
+    width: 90%;
+    margin :auto;
+    line-height: 1.45;
+    font-family: "Lucida Grande";
+    font-size :11pt;
+    max-width: 1100px;
+    @media (prefers-color-scheme: dark) {
+      color: #F5F5F5;
+    }
+  }
+  img {
+    width:100%;
+    margin:auto;
+  }
+  @media (prefers-color-scheme: light) {
+    html {
+      background: linear-gradient(#E0E2CD, #FDFDED);
+      height: 100%;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    html {
+      background: linear-gradient(#353346, #1B1B2A);
+      height: 100%;
+    }
+  }
+  a {
+    @media (prefers-color-scheme: dark) {
+      color: lightskyblue;
+    }
+    @media (prefers-color-scheme: light) {
+      color: blue;
+    }
+  }
 </style>
 <html>
+  <div>
 <head>
-	<meta name="generator" content="Hugo 0.18.1" />
-  
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-91871856-1', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
-
-  <meta name=viewport content="width=device-width, initial-scale=1">
-  <title></title>
 </head>
 <body>
-  <h1></h1>
-  
-  <p>My name is John Moody. This is a site for my projects and whatnot.</p>
-
-<p>I recently made <a href="https://jcm93.github.io/jmc">jmc</a>, which I wrote after I graduated from college last summer.</p>
-
-<p>Some stuff I&rsquo;ve done:</p>
-
+<p>Hello; </p>
+<p>Here is a selected list of things I've worked on recently:</p>
 <ul>
-<li><a href="https://digitalccbeta.coloradocollege.edu/pid/coccc:25837">High-Performance Persistent Graphs</a></li>
-<li><a href="/jmc/">jmc</a></li>
-<li><a href="http://tomcheavens.photos">Tom Cheavens Photography</a></li>
+<li><a href="https://github.com/jcm93/Record">Record</a> - a macOS screen recorder</li>
+<li><a href="https://github.com/jcm93/n64usb">n64usb</a> - control an N64 over USB from macOS</li>
+<br>
+<li>Select contributions to <a href="https://en.wikipedia.org/wiki/OBS_Studio">OBS Studio</a>:
+  <ul>
+    <li><a href="https://github.com/obsproject/obs-studio/pull/8778">macOS Audio Capture</a></li>
+    <li><a href="https://github.com/obsproject/obs-studio/pull/10895">AVCaptureDevice interface rework</a></li>
+    <li><a href="https://github.com/obsproject/obs-studio/pulls?q=is%3Apr+author%3Ajcm93+is%3Aclosed">Miscellaneous fixes and contributions</a></li>
+  </ul
+</li>
+<br>
+<li>Select contributions to <a href="https://en.wikipedia.org/wiki/Higan_(emulator)">ares</a>:
+  <ul>
+    <li><a href="https://github.com/ares-emulator/ares/pull/1431">Metal renderer backend</a></li>
+    <li><a href="https://github.com/ares-emulator/ares/pull/1686">New CMake-based build system</a></li>
+    <li><a href="https://github.com/ares-emulator/ares/pulls?q=is%3Apr+is%3Aclosed+author%3Ajcm93">Miscellaneous fixed and contributions</a></li>
+  </ul
+</li>
 </ul>
-
-<p>Contact:</p>
-
-<p>john [.] moody [@] coloradocollege [.] edu</p>
-
-<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+<p>Other projects:</p>
+<ul>
+<li><a href="http://tomcheavens.photos">Tom Cheavens Photography</a></li>
+<li><a href="https://github.com/jcm93/jmc/">jmc</a>: macOS Music.app replacement focused on local libraries (dormant due to Apple API restrictions)</li>
+<li><a href="https://digitalccbeta.coloradocollege.edu/pid/coccc:25837">High-Performance Persistent Graphs</a>: Undergraduate thesis</li>
+</ul>
+<br>
+<p>Contact: john [.] moody [@] coloradocollege [.] edu</p>
+</div>
 </html>
